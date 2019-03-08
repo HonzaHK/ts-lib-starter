@@ -1,6 +1,8 @@
-import {add} from "../src";
+import {add, addWithError} from "../src";
 
-it("does something", () => {
+it("adds two numbers", () => {
 	const r = add(3, 3);
 	expect(r).toBe(6);
+
+	addWithError(3, 2);
 });

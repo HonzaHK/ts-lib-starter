@@ -1,11 +1,16 @@
 type TSumOperand = number;
 type TSumResult = number;
 
-/**
- * adds two numbers
- */
+//we insert some comments here
+//to demonstrate they are present
+//when sourcemapping is resolved
+
 export function add(a: TSumOperand, b: TSumOperand): TSumResult {
-	//uncomment this to see that sourcemaps work
+	return a + b;
+}
+
+export function addWithError(a: TSumOperand, b: TSumOperand): TSumResult {
+	//we cause error here on purpose to see the sourcemapping works properly
 	const c: any = {};
 	const d = c["ab"]["cd"];
 
