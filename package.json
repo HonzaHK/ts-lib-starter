@@ -1,0 +1,21 @@
+{
+	"name": "my-library-name",
+	"version": "0.0.1",
+	"author": "hk",
+	"description": "my library description..",
+	"keywords": [],
+	"license": "ISC",
+	"main": "index.js",
+	"scripts": {
+		"clean": "rm -rf dist/*",
+		"build": "tsc",
+		"postbuild": "node scripts/copy.js",
+		"dist": "yarn clean && yarn build"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.3"
+	},
+	"dependencies": {
+		"source-map-support": "^0.5.10"
+	}
+}
