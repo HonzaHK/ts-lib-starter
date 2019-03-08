@@ -1,11 +1,13 @@
-type TSth = {
-	a: number;
-	b: string;
-};
-export function sum(a: number, b: number): number {
+type TSumOperand = number;
+type TSumResult = number;
+
+/**
+ * adds two numbers
+ */
+export function add(a: TSumOperand, b: TSumOperand): TSumResult {
+	//uncomment this to see that sourcemaps work
 	const c: any = {};
 	const d = c["ab"]["cd"];
+
 	return a + b;
 }
-
-sum(3, 4);
