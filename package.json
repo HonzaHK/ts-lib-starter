@@ -7,6 +7,10 @@
 	"license": "ISC",
 	"main": "index.js",
 	"types": "index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/honzahk/ts-lib-starter"
+	},
 	"scripts": {
 		"clean": "rm -rf dist/*",
 		"build": "tsc -p build/tsconfig.build.json",
