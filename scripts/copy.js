@@ -8,6 +8,7 @@ main();
 
 function main() {
 	create_dist_package_json();
+	fs.copyFileSync(path.resolve(PATH_PROJECT_ROOT, "README.md"), path.resolve(PATH_DIST_ROOT, "README.md"));
 }
 
 function create_dist_package_json() {
